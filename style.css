@@ -81,16 +81,17 @@ body {
 }
 
 .description__heading,
-.book-through__heading {
+.book-through__heading,
+.offer__heading {
     font-size: 1.4rem;
     margin-bottom: 2%;
     font-weight: 700;
 }
 
 .description__text,
-.book-through__text {
+.book-through__text
+ {
     font-size: 1.1rem;
-
 }
 
 .book-through {
@@ -100,14 +101,66 @@ body {
   padding: 8%;
 }
 
-.book-through__button {
-  background-color: #173A30;
-  border: none;
-  color: white;
-  padding: 3% 6%;
-  border-radius: 5px;
-  margin-top: 8%;
-  font-weight: 700;
-  font-size: 1.1rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+  .button {
+    background-color: #55EABE;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 3% 6%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+  }
+
+  .book-through__button {
+    margin-top: 8%;
+  }
+
+  .book-through__button--dark-green {
+    color: white;
+    background-color: #173A30;
+  }
+
+  .popular-offers {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  .popular-offers__heading {
+    margin: 7% 0;
+  }
+
+  .offer {
+    width: 90%;
+    background-color: #191919;
+    margin-bottom: 10%;
+  }
+
+  .offer__image {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .offer__text {
+    font-size: 1.1rem;
+    margin: 3% 8%;
+  }
+
+  .offer__from {
+    font-size: 1rem;
+    margin: 6% 8% 1% 8%;
+  }
+
+  .offer__price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 8%;
+  }
+
+  .offer__button {
+    margin: 4% 8% 8% 8%;
   }
