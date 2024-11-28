@@ -45,31 +45,47 @@ body {
 
 .header__bottom-section {
   background-color: #121212;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 1.6%;
   font-size: 0.9rem;
 }
 
 .hero {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 1.4rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
 }
 
 .hero__image {
-    width: 100%;
+  width: 100%;
 }
 
 .hero__title {
-    position: absolute;
-    top: 31%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.description {
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 8%;
+}
+
+.description__heading {
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+}
+
+.description__text {
+    font-size: 1.1rem;
 
 }
