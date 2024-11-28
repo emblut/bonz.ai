@@ -80,12 +80,34 @@ body {
   padding: 8%;
 }
 
-.description__heading {
-    font-size: 1.3rem;
+.description__heading,
+.book-through__heading {
+    font-size: 1.4rem;
     margin-bottom: 2%;
+    font-weight: 700;
 }
 
-.description__text {
+.description__text,
+.book-through__text {
     font-size: 1.1rem;
 
 }
+
+.book-through {
+  width: 100%;
+  background-color: #F4F4F4;
+  text-align: center;
+  padding: 8%;
+}
+
+.book-through__button {
+  background-color: #173A30;
+  border: none;
+  color: white;
+  padding: 3% 6%;
+  border-radius: 5px;
+  margin-top: 8%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+  }
