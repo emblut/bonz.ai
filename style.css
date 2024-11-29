@@ -34,7 +34,7 @@ body {
 }
 
 .header__menu-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 7%;
 }
@@ -47,7 +47,7 @@ body {
   background-color: #121212;
   text-align: center;
   padding: 1.6%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .hero {
@@ -82,85 +82,100 @@ body {
 
 .description__heading,
 .book-through__heading,
-.offer__heading {
-    font-size: 1.4rem;
-    margin-bottom: 2%;
-    font-weight: 700;
+.offer__heading,
+.ai-experience__heading {
+  font-size: 1.4rem;
+  margin-bottom: 2%;
+  font-weight: 700;
 }
 
 .description__text,
-.book-through__text
- {
-    font-size: 1.1rem;
+.book-through__text,
+.ai-experience__text {
+  font-size: 1.1rem;
 }
 
 .book-through {
   width: 100%;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   text-align: center;
   padding: 8%;
 }
 
-  .button {
-    background-color: #55EABE;
-    border: none;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 3% 6%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
-  }
+.button {
+  background-color: #55eabe;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 3% 6%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
 
-  .book-through__button {
-    margin-top: 8%;
-  }
+.book-through__button,
+.ai-experience__button {
+  margin-top: 8%;
+}
 
-  .book-through__button--dark-green {
-    color: white;
-    background-color: #173A30;
-  }
+.book-through__button--dark-green,
+.ai-experience__button--dark-green {
+  color: white;
+  background-color: #173a30;
+}
 
-  .popular-offers {
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
+.popular-offers {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
 
-  .popular-offers__heading {
-    margin: 7% 0;
-  }
+.popular-offers__heading {
+  margin: 7% 0;
+}
 
-  .offer {
-    width: 90%;
-    background-color: #191919;
-    margin-bottom: 10%;
-  }
+.offer {
+  width: 90%;
+  background-color: #191919;
+  margin-bottom: 10%;
+}
 
-  .offer__image {
-    width: 100%;
-    margin-bottom: 3%;
-  }
+.offer__image {
+  width: 100%;
+  margin-bottom: 3%;
+}
 
-  .offer__text {
-    font-size: 1.1rem;
-    margin: 3% 8%;
-  }
+.offer__text {
+  font-size: 1.1rem;
+  margin: 3% 8%;
+}
 
-  .offer__from {
-    font-size: 1rem;
-    margin: 6% 8% 1% 8%;
-  }
+.offer__from {
+  font-size: 1rem;
+  margin: 6% 8% 1% 8%;
+}
 
-  .offer__price {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0 8%;
-  }
+.offer__price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 8%;
+}
 
-  .offer__button {
-    margin: 4% 8% 8% 8%;
-  }
+.offer__button {
+  margin: 4% 8% 8% 8%;
+}
+
+.ai-experience {
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.ai-experience__top-wrapper {
+  padding: 8% 8% 6% 8%;
+}
+.ai-experience__image {
+  width: 100%;
+}
