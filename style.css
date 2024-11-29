@@ -176,6 +176,70 @@ body {
 .ai-experience__top-wrapper {
   padding: 8% 8% 6% 8%;
 }
+
 .ai-experience__image {
   width: 100%;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.footer__button--black {
+  border-width: 2px;
+  border-style: solid;
+  background-color: black;
+  color: white;
+  padding: 2% 4%;
+  font-size: 1rem;
+}
+.footer__logo {
+  margin: 8% 8% 3% 8%;
+}
+
+.footer__button {
+  margin: 2% 8% 3% 8%;
+}
+
+.footer__icons-wrapper {
+  margin: 2% 8% 2% 8%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__icon {
+  height: 100%;
+  margin: 5%;
+}
+
+.footer__heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2% 8% 0.5% 8%;
+}
+
+.footer__text {
+  font-size: 1rem;
+  margin: 0.5% 8% 0.5% 8%;
+}
+
+.last-adress-line {
+  margin-bottom: 6%;
+}
+
+.footer__copyright {
+  background-color: #191919;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 3% 8% 3% 8%;
+  font-weight: 500;
+  margin-top: 12%;
 }
