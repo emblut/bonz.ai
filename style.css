@@ -271,3 +271,9 @@ body {
 .facilities__text {
   margin-bottom: 18%;
 }
+
+
+.header__arrow {
+  position: absolute;
+  left: 8%;
+}
