@@ -87,7 +87,8 @@ body {
 .offer__heading,
 .ai-experience__heading,
 .hotel-experience__heading
-.facilities__heading {
+.facilities__heading,
+.room-card__heading {
   font-size: 1.4rem;
   margin-bottom: 2%;
   font-weight: 700;
@@ -131,7 +132,9 @@ body {
   background-color: #173a30;
 }
 
-.popular-offers {
+.popular-offers,
+.card-section  
+ {
   width: 100%;
   background-color: black;
   display: flex;
@@ -141,22 +144,26 @@ body {
   text-align: center;
 }
 
-.popular-offers__heading {
-  margin: 7% 0;
+.popular-offers__heading,
+.card-section__heading{
+  margin: 7% 8%;
 }
 
-.offer {
-  width: 90%;
+.offer,
+.room-card {
+  width: 88%;
   background-color: #191919;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 
-.offer__image {
+.offer__image,
+.room-card__image {
   width: 100%;
   margin-bottom: 3%;
 }
 
-.offer__text {
+.offer__text,
+.room-card__text {
   font-size: 1.1rem;
   margin: 3% 8%;
 }
@@ -335,4 +342,82 @@ body {
   width: 35%;
   justify-self: center;
   margin: 6%;
+}
+
+
+
+.room-card__image-wrapper {
+  position: relative;
+}
+
+.room-card__image,
+.room-card__arrow-img {
+  width: 100%;
+}
+
+.room-card__left-arrow {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  opacity: 40%;
+  transform: translateY(-50%)
+}
+
+.room-card__right-arrow {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  opacity: 90%;
+  transform: translateY(-50%)
+}
+
+.room-card__dots {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  opacity: 90%;
+  transform: translateX(-50%)
+}
+
+.paying-option {
+  border-top: solid 2px white;
+  margin: 5%;
+}
+
+.paying-option--bottom {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  margin: 5%;
+}
+
+
+.paying-option__text {
+  font-size: 1rem;
+  text-align: start;
+  margin: 2%;
+}
+
+.paying-option__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paying-option__radio {
+margin: 2%;
+scale: 1.1;
+}
+
+.paying-option__price {
+margin: 2%;
+font-size: 1.1rem;
+font-weight: 700;
+}
+
+.paying-option__button {
+  margin-bottom: 8%;
+}
+
+.paying-option__button--darker {
+  opacity: 65%;
+
 }
