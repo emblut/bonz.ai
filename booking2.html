@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <section class="header__top-section">
-        <div class="header__menu-wrapper">
+        <div class="header__menu-container">
           <div class="header__menu-icon-wrapper">
             <img
               class="header__menu-icon"
@@ -30,7 +30,7 @@
       <section class="header__bottom-section">
         <a href="booking1.html"
           ><img
-            class="header__arrow"
+            class="header__go-back"
             src="images/left-arrow-white.png"
             alt="Left arrow"
         /></a>
@@ -38,216 +38,233 @@
       </section>
     </header>
     <main>
-      <section class="booking-step">
-        <h2 class="booking-step__heading">VÄLJ RUM</h2>
+      <section class="info-section info-section--light">
+        <h2 class="info-section__heading">VÄLJ RUM</h2>
       </section>
-      <section class="card-section">
+      <form class="card-section">
         <h2 class="card-section__heading">STOCKHOLM</h2>
-        <article class="room-card">
-          <div class="room-card__image-wrapper">
-            <img class="room-card__image" src="images/room1.png" alt="" />
-            <div class="room-card__left-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/left-arrow-white.png"
-                alt=""
-              />
+
+        <article class="card">
+          <div class="background-image">
+            <img class="image" src="images/room1.png" alt="" />
+            <div class="background-image__left-arrow">
+              <img class="image" src="images/left-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__right-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/right-arrow-white.png"
-                alt=""
-              />
+            <div class="background-image__right-arrow">
+              <img class="image" src="images/right-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__dots">
-              <img src="images/dots.png" alt="" />
+            <div class="background-image__dots">
+              <img class="image" src="images/dots.png" alt="" />
             </div>
           </div>
-          <h3 class="room-card__heading">Lorem Ipsum</h3>
-          <p class="room-card__text">
+          <h3 class="card__heading">Lorem Ipsum</h3>
+          <p class="card__text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequatur cumque voluptate assumenda quo voluptas, possimus quas
             aperiam deserunt architecto voluptatibus.
           </p>
-          <section class="paying-option">
-            <p class="paying-option__text">
+
+          <section class="card__paying-option">
+            <label for="card-radio1" class="card__option-text">
               BETALA VID ANKOMST - FRI AVBOKNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1590 SEK</p>
+            </label>
+            <div class="card__choose-section">
+              <input
+                required
+                id="card-radio1"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1590 SEK</p>
             </div>
           </section>
-          <section class="paying-option paying-option--bottom">
-            <p class="paying-option__text">
-              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1390 SEK</p>
-            </div>
-          </section>
-          <button
-            class="button paying-option__button paying-option__button--darker"
+          <section
+            class="card__paying-option card__paying-option--bottom-border"
           >
+            <label for="card-radio2" class="card__option-text">
+              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN</label
+            >
+            <div class="card__choose-section">
+              <input
+                id="card-radio2"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1390 SEK</p>
+            </div>
+          </section>
+          <button type="submit" class="button card__button button--low-opacity">
             VÄLJ RUM
           </button>
         </article>
-        <article class="room-card">
-          <div class="room-card__image-wrapper">
-            <img class="room-card__image" src="images/room2.png" alt="" />
-            <div class="room-card__left-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/left-arrow-white.png"
-                alt=""
-              />
+        <article class="card">
+          <div class="background-image">
+            <img class="image" src="images/room2.png" alt="" />
+            <div class="background-image__left-arrow">
+              <img class="image" src="images/left-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__right-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/right-arrow-white.png"
-                alt=""
-              />
+            <div class="background-image__right-arrow">
+              <img class="image" src="images/right-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__dots">
-              <img src="images/dots.png" alt="" />
+            <div class="background-image__dots">
+              <img class="image" src="images/dots.png" alt="" />
             </div>
           </div>
-          <h3 class="room-card__heading">Lorem Ipsum</h3>
-          <p class="room-card__text">
+          <h3 class="card__heading">Lorem Ipsum</h3>
+          <p class="card__text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequatur cumque voluptate assumenda quo voluptas, possimus quas
             aperiam deserunt architecto voluptatibus.
           </p>
-          <section class="paying-option">
-            <p class="paying-option__text">
+
+          <section class="card__paying-option">
+            <label for="card-radio1" class="card__option-text">
               BETALA VID ANKOMST - FRI AVBOKNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1590 SEK</p>
+            </label>
+            <div class="card__choose-section">
+              <input
+                required
+                id="card-radio1"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1590 SEK</p>
             </div>
           </section>
-          <section class="paying-option paying-option--bottom">
-            <p class="paying-option__text">
-              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1390 SEK</p>
-            </div>
-          </section>
-          <button
-            class="button paying-option__button paying-option__button--darker"
+          <section
+            class="card__paying-option card__paying-option--bottom-border"
           >
+            <label for="card-radio2" class="card__option-text">
+              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN</label
+            >
+            <div class="card__choose-section">
+              <input
+                id="card-radio2"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1390 SEK</p>
+            </div>
+          </section>
+          <button type="submit" class="button card__button button--low-opacity">
             VÄLJ RUM
           </button>
         </article>
-        <article class="room-card">
-          <div class="room-card__image-wrapper">
-            <img class="room-card__image" src="images/room3.png" alt="" />
-            <div class="room-card__left-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/left-arrow-white.png"
-                alt=""
-              />
+        <article class="card">
+          <div class="background-image">
+            <img class="image" src="images/room3.png" alt="" />
+            <div class="background-image__left-arrow">
+              <img class="image" src="images/left-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__right-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/right-arrow-white.png"
-                alt=""
-              />
+            <div class="background-image__right-arrow">
+              <img class="image" src="images/right-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__dots">
-              <img src="images/dots.png" alt="" />
+            <div class="background-image__dots">
+              <img class="image" src="images/dots.png" alt="" />
             </div>
           </div>
-          <h3 class="room-card__heading">Lorem Ipsum</h3>
-          <p class="room-card__text">
+          <h3 class="card__heading">Lorem Ipsum</h3>
+          <p class="card__text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequatur cumque voluptate assumenda quo voluptas, possimus quas
             aperiam deserunt architecto voluptatibus.
           </p>
-          <section class="paying-option">
-            <p class="paying-option__text">
+
+          <section class="card__paying-option">
+            <label for="card-radio1" class="card__option-text">
               BETALA VID ANKOMST - FRI AVBOKNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1590 SEK</p>
+            </label>
+            <div class="card__choose-section">
+              <input
+                required
+                id="card-radio1"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1590 SEK</p>
             </div>
           </section>
-          <section class="paying-option paying-option--bottom">
-            <p class="paying-option__text">
-              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1390 SEK</p>
-            </div>
-          </section>
-          <button
-            class="button paying-option__button paying-option__button--darker"
+          <section
+            class="card__paying-option card__paying-option--bottom-border"
           >
+            <label for="card-radio2" class="card__option-text">
+              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN</label
+            >
+            <div class="card__choose-section">
+              <input
+                id="card-radio2"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1390 SEK</p>
+            </div>
+          </section>
+          <button type="submit" class="button card__button button--low-opacity">
             VÄLJ RUM
           </button>
         </article>
-        <article class="room-card">
-          <div class="room-card__image-wrapper">
-            <img class="room-card__image" src="images/room4.png" alt="" />
-            <div class="room-card__left-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/left-arrow-white.png"
-                alt=""
-              />
+        <article class="card">
+          <div class="background-image">
+            <img class="image" src="images/room4.png" alt="" />
+            <div class="background-image__left-arrow">
+              <img class="image" src="images/left-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__right-arrow">
-              <img
-                class="room-card__arrow-img"
-                src="images/right-arrow-white.png"
-                alt=""
-              />
+            <div class="background-image__right-arrow">
+              <img class="image" src="images/right-arrow-white.png" alt="" />
             </div>
-            <div class="room-card__dots">
-              <img src="images/dots.png" alt="" />
+            <div class="background-image__dots">
+              <img class="image" src="images/dots.png" alt="" />
             </div>
           </div>
-          <h3 class="room-card__heading">Lorem Ipsum</h3>
-          <p class="room-card__text">
+          <h3 class="card__heading">Lorem Ipsum</h3>
+          <p class="card__text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequatur cumque voluptate assumenda quo voluptas, possimus quas
             aperiam deserunt architecto voluptatibus.
           </p>
-          <section class="paying-option">
-            <p class="paying-option__text">
+
+          <section class="card__paying-option">
+            <label for="card-radio1" class="card__option-text">
               BETALA VID ANKOMST - FRI AVBOKNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1590 SEK</p>
+            </label>
+            <div class="card__choose-section">
+              <input
+                required
+                id="card-radio1"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1590 SEK</p>
             </div>
           </section>
-          <section class="paying-option paying-option--bottom">
-            <p class="paying-option__text">
-              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN
-            </p>
-            <div class="paying-option__price-wrapper">
-              <input class="paying-option__radio" type="radio" />
-              <p class="paying-option__price">1390 SEK</p>
-            </div>
-          </section>
-          <button
-            class="button paying-option__button paying-option__button--darker"
+          <section
+            class="card__paying-option card__paying-option--bottom-border"
           >
+            <label for="card-radio2" class="card__option-text">
+              BETALA NU - ÅTERBETALNING FRAM TILL KL 18 PÅ ANKOMSTDAGEN</label
+            >
+            <div class="card__choose-section">
+              <input
+                id="card-radio2"
+                class="card__radio"
+                type="radio"
+                name="card-radio"
+              />
+              <p class="card__price">1390 SEK</p>
+            </div>
+          </section>
+          <button type="submit" class="button card__button button--low-opacity">
             VÄLJ RUM
           </button>
         </article>
-      </section>
+      </form>
     </main>
   </body>
 </html>

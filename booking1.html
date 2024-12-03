@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <section class="header__top-section">
-        <div class="header__menu-wrapper">
+        <div class="header__menu-container">
           <div class="header__menu-icon-wrapper">
             <img
               class="header__menu-icon"
@@ -29,26 +29,26 @@
       </section>
       <section class="header__bottom-section">
         <a href="index.html"
-          ><img class="header__arrow" src="images/left-arrow-white.png" alt="Left arrow"
+          ><img class="header__go-back" src="images/left-arrow-white.png" alt="Left arrow"
         /></a>
         <h2>STEG 1 AV 5</h2>
       </section>
     </header>
     <main>
-        <section class="booking-step"><h2 class="booking-step__heading">BOKA RUM</h2></section>
+        <section class="info-section info-section--light"><h2 class="info-section__heading">BOKA RUM</h2></section>
             <form class="booking-form">
-                <label class="booking-form__label1" for="">HOTELL</label> 
-                <select class="booking-form__dropdown" name="" id="">
+                <label class="booking-form__label" for="hotel">HOTELL</label> 
+                <select class="booking-form__dropdown" name="hotel" id="hotel">
                     <option class="booking-form__option" value="">Stockholm</option>
                     <option class="booking-form__option" value="">Göteborg</option>
                     <option class="booking-form__option" value="">Malmö</option>
                 </select>
-                <label class="booking-form__label2" for="">INCHECKNING</label>
-                <label class="booking-form__label2" for="">UTCHECKNING</label>
-                <input class="booking-form__calendar" type="date" id="">                     
-                <input class="booking-form__calendar" type="date">
-                <label class="booking-form__label1" for="">GÄSTER</label>
-                <select class="booking-form__dropdown" name="" id="">
+                <label class="booking-form__label--short" for="check-in">INCHECKNING</label>
+                <label class="booking-form__label--short" for="check-out">UTCHECKNING</label>
+                <input required class="booking-form__calendar" type="date" id="check-in">                     
+                <input required class="booking-form__calendar" type="date" id="check-out">
+                <label class="booking-form__label" for="how-many">GÄSTER</label>
+                <select class="booking-form__dropdown" name="how-many" id="how-many">
                     <option class="booking-form__option" value="">1 person, 1 rum</option>
                     <option class="booking-form__option" value="">2 personer, 1 rum</option>
                     <option class="booking-form__option" value="">2 personer, 2 rum</option>
