@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <section class="header__top-section">
-        <div class="header__menu-wrapper">
+        <div class="header__menu-container">
           <div class="header__menu-icon-wrapper">
             <img
               class="header__menu-icon"
@@ -27,26 +27,28 @@
           />
         </div>
       </section>
-      <section class="header__bottom-section">
-        <a class="header__booking-link"><h2>BOKA RUM</h2></a>
-      </section>
+      <a class="header__booking-link" href="booking1.html">
+        <section class="header__bottom-section">
+          <h2>BOKA RUM</h2>
+        </section>
+      </a>
     </header>
     <main>
-      <section class="about-hero">
+      <section class="background-image">
         <img
-          class="about-hero__image"
+          class="image"
           src="images/outside-view.png"
           alt="Outside view from the hotel of water and mountains."
         />
         <img
-          class="about-hero__arrow"
+          class="background-image__go-back"
           src="images/left-arrow.png"
           alt="Left arrow icon"
         />
       </section>
-      <section class="hotel-experience">
-        <h2 class="hotel-experience__heading">ATT BO PÅ BONZ.AI</h2>
-        <p class="hotel-experience__text">
+      <section class="info-section info-section--padding">
+        <h2 class="heading">ATT BO PÅ BONZ.AI</h2>
+        <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
           vitae? Nesciunt necessitatibus, quasi fugiat vitae amet laudantium cum
           nostrum provident? Accusantium tempora perferendis labore voluptatum,
@@ -54,42 +56,42 @@
           nisi?
         </p>
       </section>
-      <section class="facilities">
-        <h2 class="facilities__heading">SERVICE</h2>
-        <p class="facilities__text">
+      <section class="info-section info-section--padding info-section--light">
+        <h2 class="heading">SERVICE</h2>
+        <p class="text info-section__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
           distinctio recusandae rerum fugiat nobis accusamus doloremque eius
           sint? Vitae nobis accusamus voluptatum? Ea, quas! Quisquam.
         </p>
-        <h2 class="facilities__heading">EKOLOGISK FRUKOST</h2>
-        <p class="facilities__text">
+        <h2 class="heading">EKOLOGISK FRUKOST</h2>
+        <p class="text info-section__text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
           aperiam dolorem aliquam ut amet quo magni porro dolor voluptate
           perferendis modi quas, consequatur quis? Libero ducimus illo ipsa
           recusandae aspernatur voluptate veritatis, tempora quam sint nesciunt.
           Cum inventore recusandae excepturi?
         </p>
-        <h2 class="facilities__heading">RESTURANGEN</h2>
-        <p class="facilities__text">
+        <h2 class="heading">RESTURANGEN</h2>
+        <p class="text info-section__text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
           tempora ut facere, excepturi illum suscipit laudantium temporibus
           culpa dolore, quam fuga dicta accusamus nisi vero harum porro cum
           repellat sunt!
         </p>
 
-        <h2 class="facilities__heading">WIFI</h2>
-        <p class="facilities__text">
+        <h2 class="heading">WIFI</h2>
+        <p class="text info-section__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis
           delectus repellendus temporibus et odit maxime quidem reprehenderit.
         </p>
-        <h2 class="facilities__heading">GARAGE</h2>
-        <p class="facilities__text">
+        <h2 class="heading">GARAGE</h2>
+        <p class="text info-section__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia
           dolor iusto rem eligendi non cupiditate, reprehenderit assumenda
           ipsum, debitis, laboriosam perferendis enim dolorum vitae.S
         </p>
-        <h2 class="facilities__heading">BRA ATT VETA</h2>
-        <p class="facilities__text">
+        <h2 class="heading">BRA ATT VETA</h2>
+        <p class="text info-section__text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta minus
           exercitationem iusto nulla officia quo, repudiandae fuga eligendi odio
           alias veniam quasi saepe deleniti voluptas aliquid iure nemo
@@ -100,7 +102,7 @@
     </main>
     <footer class="footer">
       <img class="footer__logo" src="images/footer-logo.png" alt="" />
-      <button class="button footer__button footer__button--black">
+      <button class="button footer__button button--black">
         SIGN UP TO STAY IN THE KNOW
       </button>
       <div class="footer__icons-wrapper">
@@ -112,7 +114,9 @@
       <h3 class="footer__heading">KONTAKT</h3>
       <p class="footer__text">bonz.ai</p>
       <p class="footer__text">Exempelvägen 7</p>
-      <p class="footer__text last-adress-line">483 54 Exempelköping</p>
+      <p class="footer__text footer__text--bottom-margin">
+        483 54 Exempelköping
+      </p>
       <p class="footer__text">Tel: 04 - 432 54 90</p>
       <p class="footer__text">exempel@mail.com</p>
       <p class="footer__copyright">COPYRIGHT</p>
