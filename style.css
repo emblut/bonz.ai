@@ -409,7 +409,8 @@ body {
   .header__drop-down:hover,
   .button:hover,
   .header__link:hover,
-  .footer__icon:hover {
+  .footer__icon:hover,
+  .background-image__go-back:hover {
     cursor: pointer;
     opacity: 85%;
     transition: 0.1s;
@@ -435,7 +436,7 @@ body {
   }
   /* ? */
   .info-section__text {
-    margin-bottom: 18%;
+    margin-bottom: 7%;
   }
   .info-section__button {
     margin-top: 20%;
@@ -552,15 +553,9 @@ body {
     font-weight: 500;
     margin-top: 80px;
   }
-  .background-image {
-    width: 100%;
-    position: relative;
-  }
   .background-image__go-back {
-    position: absolute;
-    top: 8%;
-    left: 6%;
-    opacity: 70%;
+    top: 40px;
+    left: 40px;
   }
   .background-image__left-arrow {
     position: absolute;
