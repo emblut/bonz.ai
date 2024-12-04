@@ -326,7 +326,7 @@ body {
 .header__form,
 .header__drop-down,
 .header__option,
-.header__bottom-section--desktop {
+.hide {
   display: none;
 }
 
@@ -336,7 +336,10 @@ body {
   .image,
   .footer__logo,
   .footer__icon,
-  .header__booking-link {
+  .header__booking-link,
+  .header__menu-container--desktop,
+  .header__top-section--desktop-booking,
+  .hide  {
     display: none;
   }
   .header__menu-icon--desktop,
@@ -344,10 +347,9 @@ body {
   .image--desktop,
   .footer__logo--desktop,
   .footer__icon--desktop,
-  .header__form,
   .header__drop-down,
   .header__option,
-  .header__bottom-section--desktop {
+  .header__form {
     display: block;
   }
   .header__top-section {
@@ -392,6 +394,10 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .header__bottom-section--desktop-booking {
+    justify-content: space-between;
+    padding: 60px 0 60px 0;
+  }
   .header__link {
     margin: 0 20px;
     text-decoration: none;
@@ -410,7 +416,8 @@ body {
   .button:hover,
   .header__link:hover,
   .footer__icon:hover,
-  .background-image__go-back:hover {
+  .background-image__go-back:hover,
+  .header__go-back:hover {
     cursor: pointer;
     opacity: 85%;
     transition: 0.1s;
@@ -424,9 +431,15 @@ body {
     border-width: 2px;
     font-size: 1.25rem;
   }
+  .header__back-wrapper {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: 40px;
+  }
   .header__go-back {
-    position: absolute;
-    left: 8%;
+    position: static;
+    width: auto;
   }
   .hero {
     font-size: 1.7rem;
