@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,33 +10,29 @@
     <header class="header">
       <section class="header__top-section">
         <div class="header__menu-container">
-          <div class="header__menu-icon-wrapper">
+          <div class="header__icon-wrapper">
+            <img class="header__icon" src="images/menu.png" alt="Menu icon." />
             <img
-              class="header__menu-icon"
-              src="images/menu.png"
-              alt="Menu icon"
-            />
-            <img
-              class="header__menu-icon header__menu-icon--desktop"
+              class="header__icon header__icon--desktop"
               src="images/menu-desktop.png"
-              alt="Menu icon"
+              alt="Menu icon."
             />
           </div>
           <h2 class="header__menu-text">MENY</h2>
         </div>
         <div class="header__logo-wrapper">
-          <a href="index.html">
+          <a href="index.html" aria-label="Home page link.">
             <img
               class="header__logo"
               src="images/bonz.ai-logo.png"
-              alt="Logo, a circle with bonz.ai written under it"
+              alt="Logo, a circle with bonz.ai written under it."
             />
           </a>
-          <a href="index.html">
+          <a href="index.html" aria-label="Home page link.">
             <img
               class="header__logo header__logo--desktop"
               src="images/bonz.ai-logo-desktop.png"
-              alt="Logo, a circle with bonz.ai written under it"
+              alt="Logo, a circle with bonz.ai written under it."
             />
           </a>
         </div>
@@ -47,7 +43,7 @@
           </select>
         </form>
       </section>
-      <a class="header__booking-link" href="booking1.html">
+      <a class="header__booking-link" href="booking1.html" target="_blank">
         <section class="header__bottom-section">
           <h2>BOKA RUM</h2>
         </section>
@@ -65,7 +61,7 @@
         <a class="header__link" href="">
           <h2>EVENT & MÖTEN</h2>
         </a>
-        <a href="booking1.html">
+        <a href="booking1.html" target="_blank" aria-label="Book a room here.">
           <button class="button header__button">BOKA RUM</button>
         </a>
       </section>
@@ -82,11 +78,11 @@
           src="images/outside-view-desktop.png"
           alt="Outside view from the hotel of water and mountains."
         />
-        <a href="index.html">
+        <a href="index.html" aria-label="Back to home page.">
           <img
             class="background-image__go-back"
             src="images/left-arrow.png"
-            alt="Left arrow icon"
+            alt="Left arrow icon."
           />
         </a>
       </section>
@@ -101,97 +97,113 @@
         </p>
       </section>
       <section class="info-section info-section--light">
-        <h2 class="heading">SERVICE</h2>
-        <p class="text info-section__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-          distinctio recusandae rerum fugiat nobis accusamus doloremque eius
-          sint? Vitae nobis accusamus voluptatum? Ea, quas! Quisquam.
-        </p>
-        <h2 class="heading">EKOLOGISK FRUKOST</h2>
-        <p class="text info-section__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-          aperiam dolorem aliquam ut amet quo magni porro dolor voluptate
-          perferendis modi quas, consequatur quis? Libero ducimus illo ipsa
-          recusandae aspernatur voluptate veritatis, tempora quam sint nesciunt.
-          Cum inventore recusandae excepturi?
-        </p>
-        <h2 class="heading">RESTURANGEN</h2>
-        <p class="text info-section__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-          tempora ut facere, excepturi illum suscipit laudantium temporibus
-          culpa dolore, quam fuga dicta accusamus nisi vero harum porro cum
-          repellat sunt!
-        </p>
-
-        <h2 class="heading">WIFI</h2>
-        <p class="text info-section__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis
-          delectus repellendus temporibus et odit maxime quidem reprehenderit.
-        </p>
-        <h2 class="heading">GARAGE</h2>
-        <p class="text info-section__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia
-          dolor iusto rem eligendi non cupiditate, reprehenderit assumenda
-          ipsum, debitis, laboriosam perferendis enim dolorum vitae.S
-        </p>
-        <h2 class="heading">BRA ATT VETA</h2>
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta minus
-          exercitationem iusto nulla officia quo, repudiandae fuga eligendi odio
-          alias veniam quasi saepe deleniti voluptas aliquid iure nemo
-          laboriosam accusantium in laborum ipsa ut rem sit. Est, unde
-          voluptatum! Nulla.
-        </p>
+        <article class="facilities">
+          <h2 class="heading">SERVICE</h2>
+          <p class="text facilities__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+            distinctio recusandae rerum fugiat nobis accusamus doloremque eius
+            sint? Vitae nobis accusamus voluptatum? Ea, quas! Quisquam.
+          </p>
+        </article>
+        <article class="facilities">
+          <h2 class="heading">EKOLOGISK FRUKOST</h2>
+          <p class="text facilities__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+            aperiam dolorem aliquam ut amet quo magni porro dolor voluptate
+            perferendis modi quas, consequatur quis? Libero ducimus illo ipsa
+            recusandae aspernatur voluptate veritatis, tempora quam sint
+            nesciunt. Cum inventore recusandae excepturi?
+          </p>
+        </article>
+        <article class="facilities">
+          <h2 class="heading">RESTAURANGEN</h2>
+          <p class="text facilities__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+            tempora ut facere, excepturi illum suscipit laudantium temporibus
+            culpa dolore, quam fuga dicta accusamus nisi vero harum porro cum
+            repellat sunt!
+          </p>
+        </article>
+        <article class="facilities">
+          <h2 class="heading">WIFI</h2>
+          <p class="text facilities__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            quis delectus repellendus temporibus et odit maxime quidem
+            reprehenderit.
+          </p>
+        </article>
+        <article class="facilities">
+          <h2 class="heading">GARAGE</h2>
+          <p class="text facilities__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia
+            dolor iusto rem eligendi non cupiditate, reprehenderit assumenda
+            ipsum, debitis, laboriosam perferendis enim dolorum vitae.
+          </p>
+        </article>
+        <article class="facilities">
+          <h2 class="heading">BRA ATT VETA</h2>
+          <p class="text facilities__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+            minus exercitationem iusto nulla officia quo, repudiandae fuga
+            eligendi odio alias veniam quasi saepe deleniti voluptas aliquid
+            iure nemo laboriosam accusantium in laborum ipsa ut rem sit. Est,
+            unde voluptatum! Nulla.
+          </p>
+        </article>
       </section>
     </main>
     <footer class="footer">
-      <img class="footer__logo" src="images/footer-logo.png" alt="" />
+      <img
+        class="footer__logo"
+        src="images/footer-logo.png"
+        alt="Logo, a circle with bonz.ai written next to it."
+      />
       <div class="footer__logo-wrapper">
         <img
           class="footer__logo footer__logo--desktop"
           src="images/footer-logo-desktop.png"
-          alt=""
+          alt="Logo, a circle with bonz.ai written next to it."
         />
       </div>
       <button class="button footer__button button--black">
         SIGN UP TO STAY IN THE KNOW
       </button>
-      <div class="footer__icons-wrapper">
+      <div class="footer__icons-container">
         <img
           class="footer__icon"
           src="images/facebook.png"
-          alt="Facebook icon"
+          alt="Facebook icon."
         />
         <img
           class="footer__icon footer__icon--desktop"
           src="images/facebook-desktop.png"
-          alt="Facebook icon"
+          alt="Facebook icon."
         />
         <img
           class="footer__icon"
           src="images/instagram.png"
-          alt="Instagram icon"
+          alt="Instagram icon."
         />
         <img
           class="footer__icon footer__icon--desktop"
           src="images/instagram-desktop.png"
-          alt="Instagram icon"
+          alt="Instagram icon."
         />
         <img class="footer__icon" src="images/youtube.png" alt="Youtube icon" />
         <img
           class="footer__icon footer__icon--desktop"
           src="images/youtube-desktop.png"
-          alt="Youtube icon"
+          alt="Youtube icon."
         />
         <img
           class="footer__icon"
           src="images/pinterest.png"
-          alt="Pinterest icon"
+          alt="Pinterest icon."
         />
         <img
           class="footer__icon footer__icon--desktop"
           src="images/pinterest-desktop.png"
-          alt="Pinterest icon"
+          alt="Pinterest icon."
         />
       </div>
       <h3 class="footer__heading">KONTAKT</h3>
@@ -202,6 +214,9 @@
       </p>
       <p class="footer__text">Tel: 04 - 432 54 90</p>
       <p class="footer__text">exempel@mail.com</p>
+      <p class="footer__text">
+        Fotogrfier av: <br />Jay Wennington<br />Xu Haiwei<br />Adin Geranrekab
+      </p>
       <p class="footer__copyright">COPYRIGHT</p>
     </footer>
   </body>

@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bonz.ai</title>
+    <title>Bonz.ai</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
       <section class="header__top-section">
         <div class="header__menu-container">
-          <div class="header__menu-icon-wrapper">
+          <div class="header__icon-wrapper">
+            <img class="header__icon" src="images/menu.png" alt="Menu icon" />
             <img
-              class="header__menu-icon"
-              src="images/menu.png"
-              alt="Menu icon"
-            />
-            <img
-              class="header__menu-icon header__menu-icon--desktop"
+              class="header__icon header__icon--desktop"
               src="images/menu-desktop.png"
-              alt="Menu icon"
+              alt="Menu icon."
             />
           </div>
           <h2 class="header__menu-text">MENY</h2>
         </div>
         <div class="header__logo-wrapper">
-          <a href="index.html">
+          <a href="index.html" aria-label="Home page link.">
             <img
               class="header__logo"
               src="images/bonz.ai-logo.png"
-              alt="Logo, a circle with bonz.ai written under it"
+              alt="Logo, a circle with bonz.ai written under it."
             />
           </a>
-          <a href="index.html">
+          <a href="index.html" aria-label="Home page link.">
             <img
               class="header__logo header__logo--desktop"
               src="images/bonz.ai-logo-desktop.png"
-              alt="Logo, a circle with bonz.ai written under it"
+              alt="Logo, a circle with bonz.ai written under it."
             />
           </a>
         </div>
@@ -47,7 +43,7 @@
           </select>
         </form>
       </section>
-      <a class="header__booking-link" href="booking1.html">
+      <a class="header__booking-link" href="booking1.html" target="_blank">
         <section class="header__bottom-section">
           <h2>BOKA RUM</h2>
         </section>
@@ -65,7 +61,11 @@
         <a class="header__link" href="">
           <h2>EVENT & MÖTEN</h2>
         </a>
-        <a href="booking1.html">
+        <a
+          href="booking1.html"
+          target="_blank"
+          aria-label="Booking this room here."
+        >
           <button class="button header__button">BOKA RUM</button>
         </a>
       </section>
@@ -75,22 +75,21 @@
         <img
           class="image"
           src="images/hero.png"
-          alt="Hotel room with a fireplace"
+          alt="Hotel room with a fireplace."
         />
         <img
           class="image image--desktop"
           src="images/hero-desktop.png"
-          alt="Hotel room with a fireplace"
+          alt="Hotel room with a fireplace."
         />
         <h1 class="hero__title">AI DRIVEN EKO LIVING</h1>
       </section>
       <section class="info-section">
         <h2 class="heading">BONZ.AI</h2>
         <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cum ex
-          quae quidem a tempore sequi, distinctio esse? Sed harum laborum culpa
-          ipsum consectetur possimus, tempora sapiente alias delectus.
-          Dignissimos!
+          Välkommen till Bonz.ai, det framtida hotellet där hållbarhet och smart
+          teknologi möts. Upplev AI-drivna lösningar och en grön livsstil för en
+          innovativ, miljövänlig hotellvistelse.
         </p>
       </section>
       <section class="info-section info-section--light">
@@ -100,7 +99,10 @@
           itaque ducimus explicabo quo quis doloremque expedita animi,
           voluptatem optio.
         </p>
-        <a href="booking1.html"
+        <a
+          href="booking1.html"
+          target="_blank"
+          aria-label="Book this room here."
           ><button class="button info-section__button button--dark">
             BOKA RUM
           </button></a
@@ -113,10 +115,10 @@
             <img
               class="image image--bottom-margin"
               src="images/room1.png"
-              alt="Hotel view from a bed with a triangle window"
+              alt="Hotel view from a bed with a triangle window."
             />
             <img
-              class="image image--desktop image--bottom-margin"
+              class="image image--bottom-margin image--desktop"
               src="images/room1-desktop.png"
               alt="Hotel view from a bed with a triangle window"
             />
@@ -125,69 +127,77 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
               amet accusamus, in harum dolorum delectus nulla minus reiciendis.
             </p>
-            <p class="card__from">Från</p>
-            <p class="card__price">1100:-/person</p>
-            <a href=""><button class="button card__button">BOKA NU</button></a>
+            <p class="card__text card__text--smaller">Från</p>
+            <p class="card__text--bold">1100:-/person</p>
+            <a href="booking2.html" aria-label="Book this room here.">
+              <button class="button card__button">BOKA NU</button>
+            </a>
           </article>
           <article class="card">
             <img
               class="image image--bottom-margin"
-              src="images/room1.png"
-              alt="Hotel view from a bed with a triangle window"
+              src="images/room2.png"
+              alt="Hotel room with a couch."
             />
             <img
               class="image image--desktop image--bottom-margin"
-              src="images/room1-desktop.png"
-              alt="Hotel view from a bed with a triangle window"
+              src="images/room2-desktop.png"
+              alt="Hotel room with a couch."
             />
             <h3 class="card__heading">Lorem Ipsum</h3>
             <p class="card__text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
               amet accusamus, in harum dolorum delectus nulla minus reiciendis.
             </p>
-            <p class="card__from">Från</p>
-            <p class="card__price">1100:-/person</p>
-            <a href=""><button class="button card__button">BOKA NU</button></a>
+            <p class="card__text card__text--smaller">Från</p>
+            <p class="card__text--bold">1100:-/person</p>
+            <a href="booking2.html" aria-label="Book this room here.">
+              <button class="button card__button">BOKA NU</button>
+            </a>
           </article>
           <article class="card">
             <img
               class="image image--bottom-margin"
-              src="images/room1.png"
-              alt="Hotel view from a bed with a triangle window"
+              src="images/robot.png"
+              alt="A levitating robot attatched to a big object with cords."
             />
             <img
               class="image image--desktop image--bottom-margin"
-              src="images/room1-desktop.png"
-              alt="Hotel view from a bed with a triangle window"
+              src="images/robot-desktop.png"
+              alt="A levitating robot attatched to a big object with cords."
             />
             <h3 class="card__heading">Lorem Ipsum</h3>
             <p class="card__text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
               amet accusamus, in harum dolorum delectus nulla minus reiciendis.
             </p>
-            <p class="card__from">Från</p>
-            <p class="card__price">1100:-/person</p>
-            <a href=""><button class="button card__button">BOKA NU</button></a>
+            <p class="card__text card__text--smaller">Från</p>
+            <p class="card__text--bold">1100:-/person</p>
+            <!-- <a href=""> -->
+            <button class="button card__button">BOKA NU</button>
+            <!-- </a> -->
           </article>
           <article class="card">
             <img
               class="image image--bottom-margin"
-              src="images/room1.png"
-              alt="Hotel view from a bed with a triangle window"
+              src="images/food.png"
+              alt="A table with food in a resturant."
             />
             <img
               class="image image--desktop image--bottom-margin"
-              src="images/room1-desktop.png"
-              alt="Hotel view from a bed with a triangle window"
+              src="images/food-desktop.png"
+              alt="A table with food in a resturant."
             />
             <h3 class="card__heading">Lorem Ipsum</h3>
             <p class="card__text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
               amet accusamus, in harum dolorum delectus nulla minus reiciendis.
             </p>
-            <p class="card__from">Från</p>
-            <p class="card__price">1100:-/person</p>
-            <a href=""><button class="button card__button">BOKA NU</button></a>
+            <p class="card__text card__text--smaller">Från</p>
+            <p class="card__text--bold">1100:-/person</p>
+            <!-- <a href=""> -->
+            <button class="button card__button">BOKA NU</button>
+            <!-- </a> -->
           </article>
         </div>
       </section>
@@ -199,11 +209,11 @@
             id, saepe sapiente corrupti esse maxime. Enim voluptatem quae vitae
             exercitationem.
           </p>
-          <a href=""
-            ><button class="button info-section__button button--dark">
-              BOKA NU
-            </button></a
-          >
+          <!-- <a href=""> -->
+          <button class="button info-section__button button--dark">
+            BOKA NU
+          </button>
+          <!-- </a> -->
         </div>
         <img
           class="image"
@@ -218,18 +228,22 @@
       </section>
     </main>
     <footer class="footer">
-      <img class="footer__logo" src="images/footer-logo.png" alt="" />
+      <img
+        class="footer__logo"
+        src="images/footer-logo.png"
+        alt="Logo, a circle with bonz.ai written next to it."
+      />
       <div class="footer__logo-wrapper">
         <img
           class="footer__logo footer__logo--desktop"
           src="images/footer-logo-desktop.png"
-          alt=""
+          alt="Logo, a circle with bonz.ai written next to it."
         />
       </div>
       <button class="button footer__button button--black">
         SIGN UP TO STAY IN THE KNOW
       </button>
-      <div class="footer__icons-wrapper">
+      <div class="footer__icons-container">
         <img
           class="footer__icon"
           src="images/facebook.png"
@@ -250,21 +264,25 @@
           src="images/instagram-desktop.png"
           alt="Instagram icon"
         />
-        <img class="footer__icon" src="images/youtube.png" alt="Youtube icon" />
+        <img
+          class="footer__icon"
+          src="images/youtube.png"
+          alt="Youtube icon."
+        />
         <img
           class="footer__icon footer__icon--desktop"
           src="images/youtube-desktop.png"
-          alt="Youtube icon"
+          alt="Youtube icon."
         />
         <img
           class="footer__icon"
           src="images/pinterest.png"
-          alt="Pinterest icon"
+          alt="Pinterest icon."
         />
         <img
           class="footer__icon footer__icon--desktop"
           src="images/pinterest-desktop.png"
-          alt="Pinterest icon"
+          alt="Pinterest icon."
         />
       </div>
       <h3 class="footer__heading">KONTAKT</h3>
@@ -274,7 +292,10 @@
         483 54 Exempelköping
       </p>
       <p class="footer__text">Tel: 04 - 432 54 90</p>
-      <p class="footer__text">exempel@mail.com</p>
+      <p class="footer__text footer__text--bottom-margin">exempel@mail.com</p>
+      <p class="footer__text">
+        Fotogrfier av: <br />Jay Wennington<br />Xu Haiwei<br />Adin Geranrekab
+      </p>
       <p class="footer__copyright">COPYRIGHT</p>
     </footer>
   </body>

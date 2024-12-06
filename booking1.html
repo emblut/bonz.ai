@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,12 +10,8 @@
     <header class="header">
       <section class="header__top-section header__top-section--desktop-booking">
         <div class="header__menu-container">
-          <div class="header__menu-icon-wrapper">
-            <img
-              class="header__menu-icon"
-              src="images/menu.png"
-              alt="Menu icon"
-            />
+          <div class="header__icon-wrapper">
+            <img class="header__icon" src="images/menu.png" alt="Menu icon." />
           </div>
           <h2 class="header__menu-text">MENY</h2>
         </div>
@@ -23,7 +19,7 @@
           <img
             class="header__logo"
             src="images/bonz.ai-logo.png"
-            alt="Logo, a circle with bonz.ai written under it"
+            alt="Logo, a circle with bonz.ai written under it."
           />
         </div>
       </section>
@@ -31,16 +27,16 @@
         class="header__bottom-section header__bottom-section--desktop-booking"
       >
         <div class="header__back-wrapper">
-          <a href="index.html"
+          <a href="index.html" aria-label="Exit booking page here."
             ><img
               class="header__go-back"
               src="images/left-arrow-white.png"
-              alt="Left arrow"
+              alt="Left arrow."
           /></a>
         </div>
         <h2>STEG 1 AV 5</h2>
-        <form class="header__form" action="">
-          <select class="header__drop-down" name="" id="">
+        <form class="header__form">
+          <select class="header__drop-down">
             <option value="">SV</option>
             <option value="">EN</option>
           </select>
@@ -48,19 +44,19 @@
       </section>
     </header>
     <main>
-      <section class="booking-title"><h2>BOKA RUM</h2></section>
-      <section class="booking-form-container">
-        <form class="booking-form">
-          <label class="booking-form__label" for="hotel">HOTELL</label>
+      <section class="booking-step"><h2>BOKA RUM</h2></section>
+      <form class="booking-form" action="booking2.html">
+        <section class="booking-form-container">
+          <label class="booking-form__label-long" for="hotel">HOTELL</label>
           <select class="booking-form__dropdown" name="hotel" id="hotel">
-            <option class="booking-form__option" value="">Stockholm</option>
-            <option class="booking-form__option" value="">Göteborg</option>
-            <option class="booking-form__option" value="">Malmö</option>
+            <option class="booking-form__option">Stockholm</option>
+            <option class="booking-form__option">Göteborg</option>
+            <option class="booking-form__option">Malmö</option>
           </select>
-          <label class="booking-form__label--short" for="check-in"
+          <label class="booking-form__label-short" for="check-in"
             >INCHECKNING</label
           >
-          <label class="booking-form__label--short" for="check-out"
+          <label class="booking-form__label-short" for="check-out"
             >UTCHECKNING</label
           >
           <input
@@ -75,7 +71,7 @@
             type="date"
             id="check-out"
           />
-          <label class="booking-form__label" for="how-many">GÄSTER</label>
+          <label class="booking-form__label-long" for="how-many">GÄSTER</label>
           <select class="booking-form__dropdown" name="how-many" id="how-many">
             <option class="booking-form__option" value="">
               1 person, 1 rum
@@ -87,13 +83,9 @@
               2 personer, 2 rum
             </option>
           </select>
-          <a href="booking2.html">
-            <button type="submit" class="button booking-form__button">
-              SÖK
-            </button>
-          </a>
-        </form>
-      </section>
+        </section>
+        <button type="submit" class="button button--wider">SÖK</button>
+      </form>
     </main>
   </body>
 </html>
